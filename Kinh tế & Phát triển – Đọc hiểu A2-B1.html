@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kinh tế &amp; Phát triển – Đọc hiểu A2-B1</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2ff;--card:#fff;--ink:#14206b;--mute:#5a66a8;--b1:#3347f0;--b2:#6c7dff;--cy:#52d6ff;--line:#d9e0ff;--ok:#1fa97a;--okb:#dcf7ee;--no:#e0507a;--nob:#ffe5ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.7 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:var(--cy);z-index:60;box-shadow:0 0 10px var(--cy)}
+nav{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:4px;align-items:center;background:#ffffffee;backdrop-filter:blur(10px);border-radius:40px;padding:5px 6px;box-shadow:0 8px 30px #2a3fd044;max-width:94vw;overflow-x:auto;scrollbar-width:none}
+nav a{color:var(--ink);text-decoration:none;font:600 13px "Be Vietnam Pro";padding:5px 13px;border-radius:20px;white-space:nowrap;transition:.2s}
+nav a:hover{background:var(--line)}nav a.d{background:var(--b1);color:#fff}
+#pill{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:55;background:var(--ink);color:#fff;font:600 13px "Be Vietnam Pro";padding:7px 18px;border-radius:30px;box-shadow:0 6px 20px #0005;white-space:nowrap}
+/* hero */
+header{position:relative;min-height:100vh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 20px 70px;color:#fff;background:radial-gradient(ellipse at 50% 55%,#5fd0ff 0,#3a63ff 35%,#2a28c8 65%,#14126e 100%)}
+header:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,#ffffff0d 0 1px,transparent 1px 38px),repeating-linear-gradient(0deg,#ffffff0d 0 1px,transparent 1px 38px);-webkit-mask:linear-gradient(#000,transparent 80%);mask:linear-gradient(#000,transparent 80%)}
+.glow{position:absolute;left:50%;top:48%;width:70vmin;height:70vmin;transform:translate(-50%,-50%);background:radial-gradient(circle,#bff0ffcc,transparent 65%);animation:pu 5s ease-in-out infinite}
+@keyframes pu{50%{transform:translate(-50%,-50%) scale(1.15);opacity:.7}}
+.tile{position:absolute;width:var(--s,74px);height:var(--s,74px);border-radius:24%;display:grid;place-items:center;font:800 calc(var(--s,74px)*.34) "Be Vietnam Pro";color:#fff;background:linear-gradient(145deg,#9aa6ff,#4a5cf0 55%,#2c38cf);box-shadow:inset 0 3px 6px #ffffff88,inset 0 -6px 10px #1a1fa066,0 14px 30px #0a0a6a77,0 0 30px #6c7dff66;animation:fl var(--d,6s) ease-in-out infinite;transform:rotate(var(--r,0deg))}
+.tile.l{background:linear-gradient(145deg,#fff,#b9c7ff 60%,#8ea2ff);color:#3347f0}
+@keyframes fl{50%{transform:translateY(-22px) rotate(calc(var(--r,0deg) + 8deg))}}
+.hc{position:relative;z-index:5;max-width:640px}
+.badge{display:inline-block;background:#ffffff26;border:1px solid #ffffff55;border-radius:20px;padding:2px 16px;font:600 13px "Be Vietnam Pro";margin-bottom:16px;backdrop-filter:blur(6px)}
+h1{font:800 clamp(38px,8vw,76px)/1.05 "Be Vietnam Pro";letter-spacing:-2px;text-shadow:0 6px 40px #0a1a9a99}
+h1 span{background:linear-gradient(90deg,#fff,#aef0ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin:16px auto 26px;max-width:520px;color:#e6edff;font-size:17px}
+.go{border:0;background:#fff;color:var(--b1);font:800 16px "Be Vietnam Pro";padding:12px 30px;border-radius:30px;cursor:pointer;box-shadow:0 10px 30px #0a1a9a88;transition:.25s}
+.go:hover{transform:translateY(-4px) scale(1.05)}
+/* sections */
+.wrap{max-width:900px;margin:0 auto;padding:0 18px 130px}
+.sec{padding:80px 0 0}
+.eb{display:inline-block;background:linear-gradient(90deg,var(--b1),var(--b2));color:#fff;font:600 12px "Be Vietnam Pro";letter-spacing:1px;padding:2px 14px;border-radius:20px;margin-bottom:8px}
+h2{font:800 clamp(26px,5vw,42px)/1.15 "Be Vietnam Pro";letter-spacing:-1px;margin-bottom:6px}
+.mu{color:var(--mute)}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.on{opacity:1;transform:none}
+.card{background:var(--card);border-radius:28px;padding:24px 26px;margin:16px 0;box-shadow:0 12px 36px #3347f01c;border:1.5px solid var(--line)}
+.ph{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.pn{flex:none;width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font:800 22px "Be Vietnam Pro";color:#fff;background:linear-gradient(145deg,#9aa6ff,#3347f0);box-shadow:inset 0 2px 4px #fff8,0 8px 18px #3347f044}
+.ph h3{font:800 20px/1.3 "Be Vietnam Pro"}.ph small{color:var(--mute);font-weight:500}
+.en{font-size:17.5px;line-height:1.9}
+.vw{background:linear-gradient(transparent 60%,#bfeaff 60%);border-radius:3px;cursor:pointer;font-weight:600;transition:.2s}
+.vw:hover{background:#bfeaff}
+.tg{margin:14px 0 4px;border:2px solid var(--b2);background:transparent;color:var(--b1);font:600 14px "Be Vietnam Pro";padding:5px 18px;border-radius:24px;cursor:pointer;transition:.2s}
+.tg:hover{background:var(--b1);color:#fff}
+.vi{max-height:0;overflow:hidden;opacity:0;transition:max-height .7s,opacity .6s;color:var(--mute);border-left:4px solid var(--cy);padding-left:0;font-size:16px}
+.vi.on{max-height:600px;opacity:1;padding:8px 0 8px 16px;margin-top:8px}
+.vt{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin-top:16px}
+.vc{display:flex;gap:10px;align-items:center;background:var(--bg);border-radius:18px;padding:10px 14px;border:1.5px solid transparent;transition:.25s}
+.vc:hover{border-color:var(--b2);transform:translateY(-3px)}
+.vc button{flex:none;width:36px;height:36px;border-radius:12px;border:0;background:linear-gradient(145deg,#9aa6ff,#3347f0);color:#fff;font-size:15px;cursor:pointer}
+.vc b{display:block;font:800 16px "Be Vietnam Pro"}.vc i{font-style:normal;color:var(--b1);font-size:13px}.vc span{display:block;font-size:14px;color:var(--mute)}
+.vc em{font:600 11px "Be Vietnam Pro";font-style:normal;background:var(--line);padding:0 8px;border-radius:10px;margin-left:6px;color:var(--b1)}
+.rc{margin-top:16px;border-top:2px dashed var(--line);padding-top:12px}
+.rc h4{font:800 15px "Be Vietnam Pro";color:var(--b1);margin-bottom:4px}
+/* question */
+.q{padding:12px 0;border-top:1px solid var(--line)}
+.q:first-of-type{border-top:0}
+.q p{font-weight:600;margin-bottom:8px}
+.q.big{background:var(--card);border:1.5px solid var(--line);border-radius:24px;padding:18px 22px;margin-bottom:14px;box-shadow:0 8px 24px #3347f014}
+.op{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:520px){.op{grid-template-columns:1fr}}
+.op button{display:flex;gap:10px;align-items:center;font:500 15.5px "Be Vietnam Pro";text-align:left;padding:8px 14px;border-radius:14px;border:2px solid var(--line);background:#f7f9ff;color:var(--ink);cursor:pointer;transition:.2s}
+.op button b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--line);display:grid;place-items:center;font:800 12px "Be Vietnam Pro"}
+.op button:hover:not(:disabled){border-color:var(--b2);transform:translateY(-2px)}
+.op button:disabled{cursor:default}
+.op .c{background:var(--ok);border-color:var(--ok);color:#fff}.op .c b{background:#fff;color:var(--ok)}
+.op .x{background:var(--no);border-color:var(--no);color:#fff;animation:sk .4s}.op .x b{background:#fff;color:var(--no)}
+@keyframes sk{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.fb{margin-top:10px;padding:10px 14px;border-radius:14px;font-size:14.5px;animation:up .4s}
+.fb.ok{background:var(--okb);border-left:5px solid var(--ok)}.fb.no{background:var(--nob);border-left:5px solid var(--no)}
+@keyframes up{from{opacity:0;transform:translateY(8px)}}
+.n{display:inline-block;background:var(--b1);color:#fff;font:800 12px "Be Vietnam Pro";padding:0 12px;border-radius:20px;margin-bottom:4px}
+textarea{width:100%;min-height:60px;border-radius:14px;border:2px solid var(--line);background:#f7f9ff;color:var(--ink);padding:10px 14px;font:16px "Be Vietnam Pro";resize:vertical;margin:8px 0}
+textarea:focus{outline:none;border-color:var(--b2)}
+.btn{font:600 14px "Be Vietnam Pro";padding:6px 20px;border-radius:30px;border:0;background:var(--b1);color:#fff;cursor:pointer;margin:4px 6px 0 0;transition:.2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 6px 16px #3347f055}.btn.g{background:transparent;color:var(--b1);border:2px solid var(--b2)}
+.hint span{display:inline-block;background:var(--bg);border:1.5px dashed var(--b2);color:var(--b1);font:600 13px "Be Vietnam Pro";padding:0 12px;border-radius:14px;margin-left:6px}
+footer{text-align:center;color:var(--mute);padding:60px 20px 120px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.vi{max-height:none;opacity:1;padding:8px 0 8px 16px}}
+
+/* ===== Economy theme ===== */
+body{background:linear-gradient(180deg,#040b45 0,#0a1f86 55%,#0c34b0 100%) fixed;color:#e8f1ff}
+.card,.q,.q.big,.vc{color:#14206b}
+.sec>.rv>.mu{color:#b9d4ff}
+h2{color:#fff;text-shadow:0 2px 20px #3fa8ff66}
+footer{color:#9fc0ff}
+header{position:relative;min-height:100vh;overflow:hidden;background:radial-gradient(ellipse at 75% 85%,#1a45e0 0,#0a1a7a 45%,#050d4a 100%);color:#fff;display:block;text-align:left;padding:78px 22px 40px}
+header:before{display:none}
+.rays{position:absolute;inset:0;background:repeating-linear-gradient(110deg,transparent 0 60px,rgba(120,200,255,.10) 60px 120px,transparent 120px 230px);-webkit-mask:linear-gradient(#000,transparent 80%);mask:linear-gradient(#000,transparent 80%);animation:rs 10s ease-in-out infinite alternate}
+@keyframes rs{to{transform:translateX(50px)}}
+#bub{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.wt{position:relative;z-index:3;font:400 clamp(64px,20vw,210px)/.92 Anton,Impact,"Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:2px;background:radial-gradient(ellipse 32% 38% at 16% 30%,rgba(255,255,255,.95),transparent 70%),radial-gradient(ellipse 26% 34% at 58% 66%,rgba(255,255,255,.85),transparent 70%),radial-gradient(ellipse 22% 30% at 86% 24%,rgba(255,255,255,.8),transparent 70%),radial-gradient(ellipse 24% 30% at 36% 78%,rgba(190,240,255,.8),transparent 70%),linear-gradient(170deg,#80e6ff 0%,#25a8ff 48%,#1450ff 100%);background-size:170% 170%;animation:wat 9s ease-in-out infinite alternate;-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+@keyframes wat{from{background-position:0 0}to{background-position:100% 100%}}
+.hp{position:relative;z-index:4;max-width:min(300px,56%);margin-top:22px;font-size:13.5px;line-height:1.6;color:#e8f1ff}
+.hp p{margin-bottom:10px}
+.go{margin-top:6px}
+.wh{position:absolute;right:-18%;bottom:-3%;width:min(720px,140vw);z-index:2;transform:rotate(-14deg);filter:drop-shadow(0 20px 40px rgba(0,10,80,.6))}
+.wb{animation:wf 7s ease-in-out infinite}
+@keyframes wf{50%{transform:translateY(-12px)}}
+.cn circle,.cn rect{animation:cp 4s ease-in-out infinite alternate}
+@keyframes cp{to{fill-opacity:.15}}
+.cf circle{animation:cb 6s ease-in-out infinite;transform-box:fill-box}
+@keyframes cb{50%{transform:translateY(-14px)}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><a href="#top">Home</a><a href="#doc">Bài đọc</a><a href="#mc">Trắc nghiệm</a><a href="#dich">Dịch Việt-Anh</a><a class="d" href="#doc">Bắt đầu</a></nav>
+<div id="pill">Đọc hiểu 0/12 · Từ vựng 0/30 · Dịch 0/15</div>
+
+<header id="top">
+  <div class="rays"></div><canvas id="bub"></canvas>
+  <h1 class="wt">Economy<br>&amp; Trade</h1>
+  <div class="hp"><p>Nền kinh tế là một hệ thống tạo ra và trao đổi những thứ có giá trị.</p><p>Phát triển kinh tế có nghĩa là nâng cao mức sống cho người dân trong một quốc gia.</p><button class="go" id="go">Khám phá ngay ➔</button></div>
+  <svg class="wh" viewBox="0 0 420 330"><defs><linearGradient id="wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8aeaff"/><stop offset=".5" stop-color="#2aa9ff"/><stop offset="1" stop-color="#1245e0"/></linearGradient>
+  <clipPath id="wc"><path d="M112 150C102 112 140 78 196 76C252 74 296 96 318 138C336 172 318 214 270 222C230 228 190 214 160 206C140 202 124 206 116 224C108 242 124 262 150 268C112 272 88 250 88 224C88 204 68 196 56 178C46 164 52 136 72 124C88 114 108 118 112 150Z"/></clipPath></defs>
+  <g class="wb"><path d="M92 150C80 140 52 150 30 112C46 134 62 122 84 112C92 112 100 130 112 150Z" fill="url(#wg)"/><path d="M44 200C30 214 12 216 4 206C14 196 26 188 36 176ZM44 200C58 214 66 232 60 246C48 238 40 224 40 210Z" fill="url(#wg)"/>
+  <path d="M112 150C102 112 140 78 196 76C252 74 296 96 318 138C336 172 318 214 270 222C230 228 190 214 160 206C140 202 124 206 116 224C108 242 124 262 150 268C112 272 88 250 88 224C88 204 68 196 56 178C46 164 52 136 72 124C88 114 108 118 112 150Z" fill="url(#wg)"/>
+  <path d="M170 196C176 226 158 250 130 262C168 262 198 236 204 204Z" fill="url(#wg)"/><circle cx="296" cy="150" r="5" fill="#06104f"/>
+  <g clip-path="url(#wc)" fill="#fff"><g class="cn"><circle cx="150" cy="130" r="14" fill-opacity=".5"/><circle cx="210" cy="108" r="11" fill-opacity=".4"/><circle cx="262" cy="170" r="15" fill-opacity=".45"/><circle cx="196" cy="188" r="12" fill-opacity=".5"/><circle cx="120" cy="198" r="9" fill-opacity=".4"/><circle cx="300" cy="196" r="9" fill-opacity=".4"/><rect x="226" y="140" width="9" height="28" rx="2" fill-opacity=".4"/><rect x="240" y="126" width="9" height="42" rx="2" fill-opacity=".4"/><rect x="254" y="110" width="9" height="58" rx="2" fill-opacity=".4"/></g></g></g>
+  <g class="cf" fill="#fff" fill-opacity=".4" stroke="#fff" stroke-opacity=".6"><circle cx="360" cy="70" r="14"/><circle cx="60" cy="60" r="10" style="animation-delay:-2s"/><circle cx="380" cy="250" r="9" style="animation-delay:-4s"/></g>
+  <g font-family="Anton" font-size="14" fill="#fff" text-anchor="middle" opacity=".85"><text x="150" y="135">$</text><text x="210" y="112">$</text><text x="262" y="175">$</text><text x="196" y="193">$</text><text x="360" y="75">$</text><text x="60" y="64">$</text></g></svg>
+</header>
+
+<main class="wrap">
+<section class="sec" id="doc">
+  <div class="rv"><span class="eb">PHẦN 1</span><h2>Bốn đoạn văn về kinh tế</h2><p class="mu">Bấm vào từ được gạch chân hoặc nút 🔊 để nghe phát âm. Bấm “Xem bản dịch” để đọc tiếng Việt.</p></div>
+  <div id="ps"></div>
+</section>
+<section class="sec" id="mc">
+  <div class="rv"><span class="eb">PHẦN 2</span><h2>Bài tập trắc nghiệm từ vựng</h2><p class="mu">30 câu. Chọn đáp án là có kết quả và giải thích ngay.</p></div>
+  <div id="mq" style="margin-top:18px"></div>
+</section>
+<section class="sec" id="dich">
+  <div class="rv"><span class="eb">PHẦN 3</span><h2>Bài tập dịch Việt - Anh</h2><p class="mu">15 câu ứng dụng từ vựng. Viết câu của bạn, bấm kiểm tra để xem đáp án rồi tự chấm.</p></div>
+  <div id="ts" style="margin-top:18px"></div>
+</section>
+</main>
+<footer>Hiểu nền kinh tế là bước đầu để hiểu thế giới đang vận hành thế nào. 🌍</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+let ac,on=true;
+function tone(f,t,d,ty,v,to){const o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.setValueAtTime(f,t);if(to)o.frequency.exponentialRampToValueAtTime(to,t+d);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.015);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+d+.05)}
+function sfx(ok){ac=ac||new(window.AudioContext||window.webkitAudioContext)();ac.resume();const t=ac.currentTime;if(ok)[660,880,1175].forEach((f,i)=>tone(f,t+i*.09,.4,"sine",.15));else{tone(300,t,.3,"triangle",.15,190);tone(220,t+.15,.35,"triangle",.13,150)}}
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+/* data */
+const P=[
+["Kinh tế và phát triển","Economy & economic development",
+"An economy is a system of making and trading things of value. Economic development means improving the standard of living for people in a country. When an economy grows, businesses expand, and there are more jobs and better salaries. Governments try to build better roads, hospitals, and schools to support this growth. A strong economy helps everyone live a more comfortable and secure life.",
+"Nền kinh tế là một hệ thống tạo ra và trao đổi những thứ có giá trị. Phát triển kinh tế có nghĩa là nâng cao mức sống cho người dân trong một quốc gia. Khi một nền kinh tế tăng trưởng, các doanh nghiệp mở rộng, có nhiều việc làm hơn và tiền lương tốt hơn. Các chính phủ cố gắng xây dựng đường sá, bệnh viện và trường học tốt hơn để hỗ trợ sự tăng trưởng này. Một nền kinh tế mạnh giúp mọi người sống một cuộc sống thoải mái và an toàn hơn.",
+[["Economy","n","/ɪˈkɒnəmi/","Nền kinh tế"],["Development","n","/dɪˈveləpmənt/","Sự phát triển"],["Standard of living","n phr.","/ˈstændəd əv ˈlɪvɪŋ/","Mức sống"],["Salary","n","/ˈsæləri/","Tiền lương"],["Government","n","/ˈɡʌvənmənt/","Chính phủ"]],
+[["What is an economy?","A type of school|A system of making and trading things|A hospital|A comfortable life",1,"Đoạn 1: “An economy is <b>a system of making and trading things</b> of value.”"],["What does economic development improve?","The standard of living|The weather|The internet|The universe",0,"Đoạn 1: economic development means improving <b>the standard of living</b> for people in a country."],["What happens when an economy grows?","People lose jobs|Salaries get lower|There are more jobs and better salaries|Governments stop building roads",2,"Đoạn 1: “there are <b>more jobs and better salaries</b>”."]]],
+["Đầu tư","Investment",
+"Investment is the act of putting money into something to make a profit in the future. For example, people can invest in real estate, small businesses, or the stock market. Before making an investment, it is important to understand the financial risks. Good investors always do careful research. Successful investments can create more wealth and help companies expand their daily operations.",
+"Đầu tư là hành động bỏ tiền vào một thứ gì đó để kiếm lợi nhuận trong tương lai. Ví dụ, mọi người có thể đầu tư vào bất động sản, các doanh nghiệp nhỏ hoặc thị trường chứng khoán. Trước khi thực hiện một khoản đầu tư, điều quan trọng là phải hiểu các rủi ro tài chính. Những nhà đầu tư giỏi luôn thực hiện nghiên cứu cẩn thận. Những khoản đầu tư thành công có thể tạo ra nhiều của cải hơn và giúp các công ty mở rộng hoạt động hàng ngày của họ.",
+[["Investment","n","/ɪnˈvestmənt/","Sự đầu tư, khoản đầu tư"],["Profit","n","/ˈprɒfɪt/","Lợi nhuận"],["Real estate","n phr.","/ˈriːəl ɪsteɪt/","Bất động sản"],["Risk","n","/rɪsk/","Rủi ro"],["Wealth","n","/welθ/","Sự giàu có, của cải"]],
+[["What is the goal of putting money into an investment?","To lose money|To make a profit|To buy food|To do homework",1,"Đoạn 2: investment is putting money into something <b>to make a profit</b> in the future."],["What is an example of an investment mentioned in the text?","Real estate|Going to sleep|Watching TV|Eating at a restaurant",0,"Đoạn 2: people can invest in <b>real estate</b>, small businesses, or the stock market."],["What do good investors always do?","Ignore risks|Do careful research|Ask friends|Guess the future",1,"Đoạn 2: “Good investors always <b>do careful research</b>.”"]]],
+["Các lĩnh vực trong nền kinh tế","Economic sectors",
+"The economy is divided into different sectors. The primary sector includes agriculture, fishing, and mining to get raw materials. The secondary sector is manufacturing, where factories turn raw materials into finished products like cars and clothes. The tertiary sector provides services like banking, education, and tourism. Nowadays, the service sector is the largest part of the economy in many developed countries.",
+"Nền kinh tế được chia thành các lĩnh vực khác nhau. Khu vực (lĩnh vực) thứ nhất bao gồm nông nghiệp, đánh cá và khai thác mỏ để lấy nguyên liệu thô. Khu vực thứ hai là sản xuất, nơi các nhà máy biến nguyên liệu thô thành các sản phẩm hoàn chỉnh như ô tô và quần áo. Khu vực thứ ba cung cấp các dịch vụ như ngân hàng, giáo dục và du lịch. Ngày nay, lĩnh vực dịch vụ là phần lớn nhất của nền kinh tế ở nhiều nước phát triển.",
+[["Sector","n","/ˈsektə/","Lĩnh vực, khu vực"],["Agriculture","n","/ˈæɡrɪkʌltʃə/","Nông nghiệp"],["Manufacturing","n","/ˌmænjuˈfæktʃərɪŋ/","Sự sản xuất, ngành chế tạo"],["Service","n","/ˈsɜːvɪs/","Dịch vụ"],["Developed country","n phr.","/dɪˈveləpt ˈkʌntri/","Nước phát triển"]],
+[["What does the primary sector include?","Education|Agriculture and mining|Banking|Selling cars",1,"Đoạn 3: the primary sector includes <b>agriculture, fishing, and mining</b>."],["What happens in the secondary sector?","People catch fish|People teach students|Factories make finished products|Tourists travel",2,"Đoạn 3: in manufacturing, <b>factories turn raw materials into finished products</b>."],["What is the largest part of the economy in many developed countries today?","The service sector|Mining|Fishing|Agriculture",0,"Đoạn 3: “the <b>service sector</b> is the largest part of the economy in many developed countries.”"]]],
+["Thương mại quốc tế","International trade",
+"International trade is the exchange of goods and services between countries. When a country sells products to another country, it is called an export. When it buys products from abroad, it is called an import. Trade helps countries get things they cannot easily produce themselves. It also increases business competition, which can lead to lower prices and better quality for everyday consumers.",
+"Thương mại quốc tế là sự trao đổi hàng hóa và dịch vụ giữa các quốc gia. Khi một quốc gia bán sản phẩm cho một quốc gia khác, nó được gọi là xuất khẩu. Khi nó mua sản phẩm từ nước ngoài, nó được gọi là nhập khẩu. Thương mại giúp các quốc gia có được những thứ mà họ không thể dễ dàng tự sản xuất. Nó cũng làm tăng sự cạnh tranh kinh doanh, điều có thể dẫn đến giá cả thấp hơn và chất lượng tốt hơn cho người tiêu dùng hằng ngày.",
+[["Trade","n/v","/treɪd/","Thương mại, giao thương"],["Goods","n","/ɡʊdz/","Hàng hóa"],["Export","n/v","/ˈekspɔːt/","Xuất khẩu"],["Import","n/v","/ˈɪmpɔːt/","Nhập khẩu"],["Consumer","n","/kənˈsjuːmə/","Người tiêu dùng"]],
+[["What is international trade?","Traveling abroad|Exchange of goods and services between countries|Working in a factory|Buying a house",1,"Đoạn 4: international trade is <b>the exchange of goods and services between countries</b>."],["What is it called when a country sells products to another country?","An import|A service|An export|A consumer",2,"Đoạn 4: selling products to another country is called <b>an export</b> (mua từ nước ngoài là import)."],["How does trade help consumers?","It increases prices|It leads to lower prices and better quality|It creates pollution|It stops competition",1,"Đoạn 4: competition “can lead to <b>lower prices and better quality</b> for everyday consumers”."]]]];
+const M=[
+["The country's ___ is growing very fast this year.","economy|risk|import|consumer",0,"“Nền kinh tế của đất nước đang tăng trưởng rất nhanh” → <b>economy</b>."],
+["We need better roads for economic ___.","agriculture|development|salary|good",1,"Cụm <b>economic development</b> = phát triển kinh tế."],
+["People in this city have a very high ___.","real estate|standard of living|export|manufacturing",1,"<b>Standard of living</b> = mức sống; “high standard of living” = mức sống cao."],
+["He got a new job with a much better ___.","risk|salary|agriculture|trade",1,"Công việc mới có <b>salary</b> (tiền lương) tốt hơn nhiều."],
+["The ___ decided to build three new hospitals.","government|import|profit|consumer",0,"Chủ thể quyết định xây bệnh viện là <b>government</b> (chính phủ)."],
+["Buying shares in that company was a smart ___.","service|investment|agriculture|consumer",1,"Mua cổ phần là một <b>investment</b> (khoản đầu tư) khôn ngoan."],
+["The company made a large ___ from selling phones.","standard of living|risk|profit|real estate",2,"Bán điện thoại mang lại <b>profit</b> (lợi nhuận) lớn."],
+["She works as an agent selling houses and ___.","wealth|real estate|goods|government",1,"Môi giới bán nhà và <b>real estate</b> (bất động sản)."],
+["There is always some ___ when you start a new business.","risk|agriculture|export|salary",0,"Khởi nghiệp luôn có <b>risk</b> (rủi ro)."],
+["He built his ___ through hard work and good investments.","service|wealth|manufacturing|consumer",1,"Làm việc chăm chỉ và đầu tư tốt tạo nên <b>wealth</b> (của cải)."],
+["Education and banking belong to the service ___.","sector|real estate|profit|import",0,"<b>Service sector</b> = lĩnh vực dịch vụ (giáo dục, ngân hàng)."],
+["Vietnam is famous for its ___, especially rice and coffee.","risk|agriculture|service|wealth",1,"Lúa gạo, cà phê thuộc <b>agriculture</b> (nông nghiệp)."],
+["The ___ industry produces cars, clothes, and electronics.","manufacturing|consumer|government|import",0,"Ngành sản xuất ô tô, quần áo, điện tử là <b>manufacturing</b> (chế tạo)."],
+["Tourism is an important ___ that brings money to the city.","agriculture|service|real estate|risk",1,"Du lịch là một ngành <b>service</b> (dịch vụ) quan trọng."],
+["A ___ usually has modern infrastructure and high salaries.","developed country|consumer|profit|goods",0,"Hạ tầng hiện đại, lương cao là đặc điểm của <b>developed country</b> (nước phát triển)."],
+["International ___ connects businesses around the world.","trade|risk|salary|agriculture",0,"<b>International trade</b> = thương mại quốc tế, kết nối doanh nghiệp toàn cầu."],
+["Trucks transport these ___ to the supermarket.","goods|governments|standard of living|developments",0,"Xe tải chở <b>goods</b> (hàng hóa) đến siêu thị."],
+["Our country needs to ___ more agricultural products.","export|risk|consumer|service",0,"Cần <b>export</b> (xuất khẩu) thêm nông sản; sau “to” là động từ."],
+["We have to ___ oil because we do not have enough.","import|profit|real estate|wealth",0,"Không đủ dầu nên phải <b>import</b> (nhập khẩu); sau “have to” là động từ."],
+["The company lowered prices to attract more ___.","consumers|risks|developments|agricultures",0,"Giảm giá để thu hút thêm <b>consumers</b> (người tiêu dùng)."],
+["Without ___, there would be no jobs or money.","standard of living|an economy|risk|an import",1,"Không có <b>an economy</b> (nền kinh tế) thì không có việc làm hay tiền."],
+["They hope to see more urban ___ in the next five years.","development|good|export|salary",0,"<b>Urban development</b> = phát triển đô thị."],
+["Buying a house is a safe long-term ___.","risk|consumer|investment|agriculture",2,"Mua nhà là một <b>investment</b> (khoản đầu tư) dài hạn an toàn."],
+["She sold her startup and made a huge ___.","profit|government|service|trade",0,"Bán công ty khởi nghiệp thu về <b>profit</b> (lợi nhuận) khổng lồ."],
+["You must be careful; investing in crypto carries a high ___.","risk|salary|real estate|consumer",0,"Đầu tư tiền mã hóa mang <b>risk</b> (rủi ro) cao."],
+["Japan is a well-known ___ with advanced technology.","developed country|agriculture|profit|good",0,"Nhật Bản là <b>developed country</b> (nước phát triển) có công nghệ tiên tiến."],
+["The tech ___ is creating thousands of new jobs.","sector|import|wealth|risk",0,"<b>Tech sector</b> = lĩnh vực công nghệ."],
+["Factory workers are important for the ___ process.","manufacturing|service|consumer|export",0,"Công nhân nhà máy quan trọng với quy trình <b>manufacturing</b> (sản xuất)."],
+["When we sell coffee to Europe, it is an ___.","export|import|risk|agriculture",0,"Bán cà phê sang châu Âu là <b>export</b> (xuất khẩu); “an” đứng trước nguyên âm."],
+["Buying cheap ___ from other countries helps lower costs.","goods|governments|wealths|salaries",0,"Mua <b>goods</b> (hàng hóa) giá rẻ từ nước khác giúp giảm chi phí."]];
+const T=[["Nền kinh tế đang phát triển nhanh chóng.","economy","The economy is developing fast."],["Chính phủ xây dựng trường học mới.","government","The government builds new schools."],["Mức sống của chúng ta tốt hơn.","standard of living","Our standard of living is better."],["Anh ấy có một mức lương cao.","salary","He has a high salary."],["Đầu tư mang lại nhiều lợi nhuận.","profit","Investment brings a lot of profit."],["Họ đầu tư vào bất động sản.","real estate","They invest in real estate."],["Bạn phải hiểu các rủi ro.","risk","You must understand the risks."],["Sự giàu có của anh ấy đến từ kinh doanh.","wealth","His wealth comes from business."],["Lĩnh vực nông nghiệp rất quan trọng.","agriculture","The agriculture sector is very important."],["Nhà máy sản xuất hàng hóa.","goods","The factory manufactures/produces goods."],["Ngành dịch vụ đang tăng trưởng.","service","The service sector is growing."],["Nước phát triển có nền kinh tế mạnh.","developed country","A developed country has a strong economy."],["Thương mại quốc tế kết nối các quốc gia.","trade","International trade connects countries."],["Việt Nam xuất khẩu gạo và nhập khẩu máy móc.","export","Vietnam exports rice and imports machines."],["Người tiêu dùng muốn giá thấp.","consumer","Consumers want low prices."]];
+/* scoring */
+const S={rc:[0,0],mc:[0,0],tr:[0,0]};
+function pill(){$("#pill").textContent=`Đọc hiểu ${S.rc[0]}/12 · Từ vựng ${S.mc[0]}/30 · Dịch ${S.tr[0]}/15`}
+const L="ABCD";
+function QC(q,n,g,big){const d=document.createElement("div"),o=q[1].split("|");d.className="q"+(big?" big":"");
+d.innerHTML=`<span class="n">Câu ${n}</span><p>${q[0].replace(/_{3,}/,"<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>")}</p><div class="op">${o.map((t,j)=>`<button data-j="${j}"><b>${L[j]}</b>${t}</button>`).join("")}</div><div class="fb" style="display:none"></div>`;
+const bs=d.querySelectorAll("button"),fb=d.querySelector(".fb");
+bs.forEach(b=>b.onclick=()=>{const j=+b.dataset.j,ok=j==q[2];bs.forEach(x=>x.disabled=true);bs[q[2]].classList.add("c");if(!ok)b.classList.add("x");fb.style.display="block";fb.className="fb "+(ok?"ok":"no");fb.innerHTML=(ok?"✅ <b>Chính xác!</b> ":`❌ <b>Chưa đúng.</b> Đáp án đúng là <b>${L[q[2]]}. ${o[q[2]]}</b>. `)+q[3];S[g][0]+=ok;S[g][1]++;sfx(ok);pill()});return d}
+/* passages */
+P.forEach((p,i)=>{let en=p[2];p[4].forEach((w,k)=>{en=en.replace(new RegExp("\\b"+w[0]+"(s|es|ed|ing)?\\b","gi"),m=>`<span class="vw" data-k="${k}" title="${w[3]}">${m}</span>`)});
+const c=document.createElement("div");c.className="card rv";
+c.innerHTML=`<div class="ph"><div class="pn">${i+1}</div><div><h3>${p[0]}</h3><small>${p[1]}</small></div></div><p class="en">${en}</p><button class="tg">Xem bản dịch ▾</button><div class="vi">${p[3]}</div><div class="vt">${p[4].map(w=>`<div class="vc"><button aria-label="Nghe">🔊</button><div><b>${w[0]}<em>${w[1]}</em></b><i>${w[2]}</i><span>${w[3]}</span></div></div>`).join("")}</div><div class="rc"><h4>Reading Comprehension</h4></div>`;
+c.querySelectorAll(".vw").forEach(e=>e.onclick=()=>say(e.textContent));
+c.querySelectorAll(".vc button").forEach((b,k)=>b.onclick=()=>say(p[4][k][0]));
+const vi=c.querySelector(".vi"),tg=c.querySelector(".tg");tg.onclick=()=>{vi.classList.toggle("on");tg.textContent=vi.classList.contains("on")?"Ẩn bản dịch ▴":"Xem bản dịch ▾"};
+p[5].forEach((q,k)=>c.querySelector(".rc").appendChild(QC([q[0],q[1],q[2],q[3]],i*3+k+1,"rc",false)));$("#ps").appendChild(c)});
+M.forEach((q,i)=>{const d=QC(q,i+1,"mc",true);d.classList.add("rv");$("#mq").appendChild(d)});
+T.forEach((t,i)=>{const c=document.createElement("div");c.className="q big rv";c.innerHTML=`<span class="n">Câu ${i+1}</span><p>${t[0]} <span class="hint"><span>${t[1]}</span></span></p><textarea placeholder="Viết câu tiếng Anh của bạn..."></textarea><button class="btn">Kiểm tra</button><div class="fb" style="display:none"></div>`;
+const ta=c.querySelector("textarea"),fb=c.querySelector(".fb");c.querySelector(".btn").onclick=function(){if(this.dataset.u)return;this.dataset.u=1;this.disabled=true;ta.readOnly=true;const v=ta.value.toLowerCase();fb.style.display="block";fb.className="fb ok";
+fb.innerHTML=`${v.trim()?(v.includes(t[1].split(" ")[0])?"👍 Bạn đã dùng từ khóa <b>"+t[1]+"</b>.":"💡 Bạn chưa dùng từ khóa <b>"+t[1]+"</b>."):"💡 Bạn chưa nhập câu nào."}<br><b>Đáp án:</b> ${t[2]}<div style="margin-top:8px"><button class="btn" data-r="1">Mình viết đúng</button><button class="btn g" data-r="0">Cần luyện thêm</button></div>`;
+fb.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{S.tr[0]+=+b.dataset.r;S.tr[1]++;fb.querySelector("div").innerHTML=b.dataset.r=="1"?"🎉 Tuyệt, đã ghi nhận!":"🔁 Không sao, đọc lại đáp án rồi thử lần sau nhé.";sfx(b.dataset.r=="1");pill()})};$("#ts").appendChild(c)});
+/* fx */
+$("#go").onclick=()=>$("#doc").scrollIntoView();
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.06});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+addEventListener("scroll",()=>{$("#bar").style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+"%"});
+
+/* bubbles */
+(function(){const cv=document.getElementById("bub"),x=cv.getContext("2d");let B=[];function rs(){cv.width=cv.offsetWidth;cv.height=cv.offsetHeight;B=Array.from({length:30},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*5+1.5,s:Math.random()*.5+.2,p:Math.random()*6}))}rs();addEventListener("resize",rs);
+(function d(t){x.clearRect(0,0,cv.width,cv.height);B.forEach(b=>{b.y-=b.s;b.x+=Math.sin(t/800+b.p)*.4;if(b.y<-10)b.y=cv.height+10;x.beginPath();x.arc(b.x,b.y,b.r,0,7);x.strokeStyle="rgba(190,230,255,.6)";x.lineWidth=1.2;x.stroke();x.fillStyle="rgba(190,230,255,.12)";x.fill()});requestAnimationFrame(d)})(0)})();
+</script>
+</body>
+</html>
